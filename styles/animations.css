@@ -20,8 +20,7 @@
 
 .core {
     fill: transparent;
-    transition: fill 0.3s linear;
-    transition-delay: 0.3s;
+    transition: fill 0.3s linear 0.3s;
 }
   
 .main-body {
@@ -31,8 +30,7 @@
 
 .like-icon.is-liked .contour {
     fill: var(--accent-color);
-    transition: fill 0.3 linear;
-    transition-delay: 0.06s;
+    transition: fill 0.3 linear 0.06s;
 }
   
 .like-icon:hover .core {
@@ -72,16 +70,6 @@
     fill: var(--heart-filling-color);
 }
   
-.like-icon .main-body {
-    transition-delay: 0s;
-    transition: fill 0.3s linear;
-}
-  
-.like-icon .core {
-    transition-delay: 0.3s;
-    transition: fill 0.03s linear;
-}
-
 .like-icon.is-liked .sparks {
     animation: like-icon-sparks 0.3s ease-in 0.3s 1 alternate;
 }

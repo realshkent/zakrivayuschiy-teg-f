@@ -284,7 +284,7 @@
 .modal-window:is([open]) .modal-window_form {
   display: grid;
   gap: 30px;
-  align-self: center;
+  justify-self: center;
 }
 
 .modal-window:is([open]) .floppy {
@@ -310,6 +310,7 @@
   .header {
     width: 100%;
     padding-block-start: 120px;
+    padding-block-end: 120px;
   }
 
   .section {
@@ -341,8 +342,10 @@
   .floppy {
     width: 28px;
   }
+  }
 
+@media (width <= 405px) {
   .modal-window_button {
     width: 257px;
   }
-  }
+} 
